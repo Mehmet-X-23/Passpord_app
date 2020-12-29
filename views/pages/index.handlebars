@@ -1,0 +1,18 @@
+
+<div class="card">
+    <h3 class="card-header">Registered User</h3>
+
+    <div class="card-body">
+        <ul class="list-group">
+            {{#each users as |user|}}
+
+            <li class="list-group-item">{{user}}</li>
+            {{else}}
+            <div class="alert alert-info">
+                There Is No Registered Users!!
+            </div>
+            {{/each}}
+
+        </ul>
+    </div>
+</div>
